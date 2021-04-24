@@ -6,7 +6,7 @@
 - [x] Get and Run code for porject
 
 # Sprint 2
-- [x] Atleast 6 commits to repository -- curently 6
+- [] Atleast 6 commits to repository -- curently 4
 - [x] Add useful comments to comits.
 
 
