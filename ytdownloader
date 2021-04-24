@@ -22,6 +22,11 @@ link = StringVar()
 Label(root, text = 'Paste Link Here:', font = 'arial 15 bold').place(x= 160 , y = 60)
 link_enter = Entry(root, width = 70,textvariable = link).place(x = 32, y = 90)
 
+#link is a string type variable that stores the youtube video link that the user enters.
+#Entry() widget is used when we want to create an input text field.
+#width sets the width of entry widget
+#textvariable used to retrieve the value of current text variable to the entry widget
+#place() use to place the widget at a specific position
 
 def Downloader():     
     url =YouTube(str(link.get()))
