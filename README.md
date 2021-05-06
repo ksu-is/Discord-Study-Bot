@@ -31,8 +31,8 @@ In this python project, user has to copy the youtube video URL that they want to
 
 ## Credits
 
-*NeuralNine/youtube-downloader-converter
-*[Youtbe Downloader Python](https://www.youtube.com/watch?v=BPhvbIuq7uM)
+* NeuralNine/youtube-downloader-converter
+* [Youtbe Downloader Python](https://www.youtube.com/watch?v=BPhvbIuq7uM)
 
 
 ## License
