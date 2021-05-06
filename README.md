@@ -10,7 +10,7 @@ My favorite social media platform of all time is YouTube. I could watch my favor
 
 ## Tech/framework used
 
-<b>Built with Python</b>
+Built with Python
 - [Python](https://www.python.org/)
 
 
@@ -30,6 +30,7 @@ The Down to Fork project is a python project. The object of this project is to d
 In this python project, user has to copy the youtube video URL that they want to download and simply paste that URL in the ‘paste link here’ section and click on the download button, it will start downloading the video. When video downloading finishes, it shows a message ‘downloaded’ popup on the window below the download button.
 
 ## Credits
- 
+Tyrrrz/YoutubeDownloader
+
 ## License
 MIT © [QuincyOlocha]()
