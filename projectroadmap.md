@@ -16,5 +16,5 @@
 
 # Present
 - [x] Schedule a presenting time
-- [ ] Record the presentation
-- [ ] DONE
+- [x] Record the presentation
+- [x] DONE
