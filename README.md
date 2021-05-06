@@ -6,7 +6,7 @@ Down To Fork (DTF) is a program that allows you to download your favorite YouTub
 My favorite social media platform of all time is YouTube. I could watch my favorite creators for hours on end. Sometimes there are videos I would like to download permanently. However, YouTube doesn’t give you that option. 
 
 ## Screenshots
-![YT Downloader](https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/sites/2/2020/09/python-youtube-downloader-output.png)
+![YT Downloader](https://github.com/ksu-is/down-to-fork/blob/main/down%20to%20fork%20code.PNG?raw=true)
 
 ## Tech/framework used
 
