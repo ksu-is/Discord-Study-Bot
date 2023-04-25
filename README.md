@@ -1,4 +1,4 @@
-# YoutTube-Downloader
+# YouTube-Downloader
 The YouTube Downloader is a program that allows you to download your favorite YouTube videos. 
 
 
