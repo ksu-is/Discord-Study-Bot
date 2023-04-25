@@ -6,18 +6,18 @@
 - [x] Get and Run code for porject
 
 # Sprint 2
-- [o] Establish Roadmap
-- [o] Atleast 6 commits to repository -- curently 1
-- [o] Add useful comments to comits.
-- [o] Implement ability to change download quality 
+- [ ] Establish Roadmap
+- [ ] Atleast 6 commits to repository -- curently 1
+- [ ] Add useful comments to comits.
+- [ ] Implement ability to change download quality 
 
 
 # Sprint 3
-- [o] Implement ability to give file a custom name
-- [o] Add more commits and keep coding
-- [o] Create PowerPoint slide for marketing the project
+- [ ] Implement ability to give file a custom name
+- [ ] Add more commits and keep coding
+- [ ] Create PowerPoint slide for marketing the project
 
 # Present
-- [o] Schedule a presenting time
-- [o] Record the presentation
-- [o] DONE
+- [ ] Schedule a presenting time
+- [ ] Record presentation
+- [ ] Finished Product
