@@ -24,12 +24,24 @@ link_enter = Entry(root, width = 70,textvariable = link).place(x = 32, y = 90)
 
 
 def Downloader():
-     
+
+    youtubeObject = youtubeObject.streams.get_highest_resolution() 
     url =YouTube(str(link.get()))
     video = url.streams.first()
     video.download()
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)  
 
+def 360():
+youtubeObject = youtubeObject.streams.get_360()
+
+def 720():
+youtubeObject = youtubeObject.streams.get_720()
+
+def 1080():
+youtubeObject = youtubeObject.streams.get_1080()
+
+def 4k():
+youtubeObject = youtubeObject.streams.get_4k()
 
 Button(root,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = 'pale violet red', padx = 2, command = Downloader).place(x=180 ,y = 150)
 
