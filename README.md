@@ -1,5 +1,5 @@
-# down-to-fork
-The YouTube is a program that allows you to download your favorite YouTube videos. 
+# YoutTube-Downloader
+The YouTube Downloader is a program that allows you to download your favorite YouTube videos. 
 
 
 ## Motivation
