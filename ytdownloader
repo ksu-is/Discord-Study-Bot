@@ -2,7 +2,7 @@ from tkinter import *
 from pytube import YouTube
 
 root = Tk()
-root.geometry('500x300')
+root.geometry('500x500')  
 root.resizable(0,0)
 root.title("DataFlair-youtube video downloader")
 
@@ -10,15 +10,11 @@ root.title("DataFlair-youtube video downloader")
 Label(root,text = 'Youtube Video Downloader', font ='arial 20 bold').pack()
 
 
-
-
 ##enter link
 link = StringVar()
 
-Label(root, text = 'Paste Link Here:', font = 'arial 15 bold').place(x= 160 , y = 60)
+Label(root, text = 'Paste Link Here:', font = 'arial 15 bold').place(x= 180 , y = 60)
 link_enter = Entry(root, width = 70,textvariable = link).place(x = 32, y = 90)
-
-
 
 #function to download video
 
@@ -30,29 +26,40 @@ def Downloader():
     video = url.streams.first()
     video.download()
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)  
+
+#Title of video
+#print("Title: ",url.title)
+#Number of views of video
+#print("Number of views: ",url.views)
+#Length of the video
+#print("Length of video: ",url.length,"seconds")
+#Description of video
+#print("Description: ",url.description)
+#Rating
+#print("Ratings: ",url.rating)     
     
 #functions to change video quality 
 
-def 360():
-youtubeObject = youtubeObject.streams.get_360()
+def p360():
+    youtubeObject = youtubeObject.streams.get_360()
 
-def 720():
-youtubeObject = youtubeObject.streams.get_720()
+def p720():
+    youtubeObject = youtubeObject.streams.get_720()
 
-def 1080():
-youtubeObject = youtubeObject.streams.get_1080()
+def p1080():
+    youtubeObject = youtubeObject.streams.get_1080()
 
-def 4k():
-youtubeObject = youtubeObject.streams.get_4k()
+def k4():
+    youtubeObject = youtubeObject.streams.get_4k()
 
 Button(root,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = '#b2071d', padx = 2, command = Downloader).place(x=180 ,y = 150)
 
-Button(root,text = '360P', font = 'arial 15 bold' ,bg = 'white', padx = 2, command = 360).place(x=180 ,y = 150)
+Button(root,text = '360P', font = 'arial 15 bold' ,bg = 'white', padx = 1, command = p360).place(x=110 ,y = 210)
 
-Button(root,text = '720P', font = 'arial 15 bold' ,bg = 'white', padx = 2, command = 720).place(x=180 ,y = 150)
+Button(root,text = '720P', font = 'arial 15 bold' ,bg = 'white', padx = 1, command = p720).place(x=170 ,y = 210)
 
-Button(root,text = '1080P', font = 'arial 15 bold' ,bg = 'white', padx = 2, command = 1080).place(x=180 ,y = 150)
+Button(root,text = '1080P', font = 'arial 15 bold' ,bg = 'white', padx = 1, command = p1080).place(x=230 ,y = 210)
 
-Button(root,text = '4K', font = 'arial 15 bold' ,bg = 'white', padx = 2, command = 4K).place(x=180 ,y = 150)
+Button(root,text = '4K', font = 'arial 15 bold' ,bg = 'white', padx = 1, command = k4).place(x=300 ,y = 210)
 
 root.mainloop()
