@@ -1,0 +1,20 @@
+from docxtpl import DocxTemplate
+from datetime import datetime
+
+##set 
+doc = DocxTemplate("Resume_Template")
+my_name = input("What name would you like to appea  on the resume? \n Press SPACE to exit at anytime \n")
+my_phone = input("What phone number would you like to appear on the resume? \n xxx-xxx-xxxx \n Press SPACE to exit at anytime \n" )
+my_email = input("What email address would you like to appear on the resume? \n  Press SPACE to exit at anytime \n")
+#my_address = input("What address would you like to appear on the resume? \n  Press SPACE to exit at anytime \n")
+school_years = input("What year did you start school? What year do you Graduate? xxxx - xxxx \n Press SPACE to exit at anytime \n")
+job1_years = input("For what years did you work your first job?  xxxx - xxxx \n Press SPACE to exit at anytime \n")
+job2_years = input("For what years did you work your second job? xxxx - xxxx \n Press SPACE to exit at anytime \n")
+
+##
+my_context = {'my_name': my_name, 'my_phone': my_phone, 'my_email': my_email, 'my_address': my_address,
+              'school_years': school_years}
+
+##
+doc.render(my_context)
+doc.save(f"{my_name}_Resume.docx")

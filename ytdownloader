@@ -21,6 +21,7 @@ link_enter = Entry(root, width = 70,textvariable = link).place(x = 32, y = 90)
 
 def Downloader():
 
+    youtubeObject = YouTube(link)
     youtubeObject = youtubeObject.streams.get_highest_resolution() 
     url =YouTube(str(link.get()))
     video = url.streams.first()
