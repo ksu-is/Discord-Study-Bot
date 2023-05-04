@@ -10,10 +10,11 @@ my_email = input("What email address would you like to appear on the resume? \n 
 school_years = input("What year did you start school? What year do you Graduate? xxxx - xxxx \n Press SPACE to exit at anytime \n")
 job1_years = input("For what years did you work your first job?  xxxx - xxxx \n Press SPACE to exit at anytime \n")
 job2_years = input("For what years did you work your second job? xxxx - xxxx \n Press SPACE to exit at anytime \n")
+today_date = datetime.today().strftime("%d %b, %Y")
 
 ##
-my_context = {'my_name': my_name, 'my_phone': my_phone, 'my_email': my_email, 'my_address': my_address,
-              'school_years': school_years}
+my_context = {'my_name': my_name, 'my_phone': my_phone, 'my_email': my_email,
+              'school_years': school_years, 'job1_years': job1_years, 'job2_years': job2_years}
 
 ##
 doc.render(my_context)
