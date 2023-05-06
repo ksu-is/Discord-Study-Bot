@@ -1,0 +1,102 @@
+
+import datetime
+from discord.ext import commands, tasks
+import discord
+from dataclasses import dataclass
+
+
+auth_token = "MTEwNDIyOTQ5NDk1MDIxOTkwMQ.GWMVYE.82ljeZ2SK7fvH0zyW7A4J-pcH8CqSnAFqotfIk" 
+    #allows bot to interact with vsc 
+channel_id = 1104231767856128050
+    #allows bot to interact with specific discord channel"
+break_time = 2
+    #set time to be notified for a break
+
+@dataclass
+class Session:
+    is_active : bool = False
+    start_time: int = 0
+
+bot = commands.Bot(command_prefix="$", intents=discord.Intents.all())
+    #choose what 
+session = Session()
+
+@bot.event
+async def on_ready():
+    print("Yo World! The study bot is ready!")
+    channel = bot.get_channel(channel_id)
+    await channel.send("Hello Nick! Study Bot Online")
+
+@tasks.loop(minutes = break_time, count=3)
+async def break_reminder():
+
+    #ignore first instance of break_time
+    if break_reminder.current_loop == 0:
+        return
+
+    channel = bot.get_channel(channel_id)
+    await channel.send(f"**Time for a break!** You've been studying for {break_time} minutes")
+    if break_reminder < 1:
+        return
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f"Hello!")
+
+@bot.command()
+async def add(ctx, *arr):
+    answer = 0
+    for i in arr:
+        answer += int(i)
+    
+    await ctx.send(f"The answer is: {answer}")
+
+@bot.command()
+async def start(ctx):
+    if session.is_active:
+        await ctx.send(f"A session is already active. Please close this session first using '$end' before starting another!")
+        return
+    session.is_active = True
+    session.start_time = ctx.message.created_at.timestamp()
+    human_readable_time = ctx.message.created_at. strftime("%H:%M:%S")
+    break_reminder.start()
+    await ctx.send(f"New study session started at {human_readable_time}")
+
+@bot.command()
+async def end(ctx):
+    if not session.is_active:
+        await ctx.send(f"No session is active. Please start a session first using '$start'!")
+        return
+    session.is_active = False
+    end_time = ctx.message.created_at.timestamp()
+    duration = end_time - session.start_time
+    human_readable_duration = str(datetime.timedelta(seconds=duration))
+    break_reminder.stop()
+    await ctx.send(f"Session ended at: {human_readable_duration}")
+
+
+bot.run(auth_token)
+
+
+
+'''
+
+import discord
+ 
+intents = discord.Intents.all()
+client = discord.Client(command_prefix='!', intents=intents)
+ 
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+ 
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+ 
+    if message.content.startswith('hi'):
+        await message.channel.send('Hello!')
+ 
+client.run("MTEwNDIyOTQ5NDk1MDIxOTkwMQ.GWMVYE.82ljeZ2SK7fvH0zyW7A4J-pcH8CqSnAFqotfIk")
+'''

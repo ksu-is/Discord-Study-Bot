@@ -3,7 +3,7 @@ from datetime import datetime
 
 ##set 
 doc = DocxTemplate("Resume_Template")
-my_name = input("What name would you like to appea  on the resume? \n Press SPACE to exit at anytime \n")
+my_name = input("What name would you like to appear on the resume? \n Press SPACE to exit at anytime \n")
 my_phone = input("What phone number would you like to appear on the resume? \n xxx-xxx-xxxx \n Press SPACE to exit at anytime \n" )
 my_email = input("What email address would you like to appear on the resume? \n  Press SPACE to exit at anytime \n")
 #my_address = input("What address would you like to appear on the resume? \n  Press SPACE to exit at anytime \n")
