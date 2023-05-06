@@ -5,8 +5,9 @@ import discord
 from dataclasses import dataclass
 
 
-auth_token = "MTEwNDIyOTQ5NDk1MDIxOTkwMQ.GWMVYE.82ljeZ2SK7fvH0zyW7A4J-pcH8CqSnAFqotfIk" 
+auth_token = "Bot Token Here" 
     #allows bot to interact with vsc 
+        #when posted to github, the code is automatically reset so make sure to keep file local
 channel_id = 1104231767856128050
     #allows bot to interact with specific discord channel"
 break_time = 2
