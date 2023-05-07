@@ -1,4 +1,4 @@
-# YouTube-Downloader
+# Discord-Study-Bot
 The YouTube Downloader is a program that allows you to download your favorite YouTube videos. 
 
 
@@ -15,25 +15,27 @@ Built with Python
 
 
 ## Installation
-To implement this project we use basic concept of python, tkinter, pytube library.
-
-Tkinter is a standard GUI library and it is one of the easiest ways to build a GUI application.
-pytube used for downloading videos from youtube
-To install the required modules run pip installer command on the command line: 
-pip install tkinter
-Pip install pytube
-
+To implement this project you will need to install the python discord client with ~pip3 install discord
 
 ## How to use?
-The YouTube Downloader is a python project. The object of this project is to download any type of video in a fast and easy way from youtube in your device.
+The Discord Study Bot is a python project that is here to help you with your studying needs. If you want to time your study session, 
 
-In this python project, the user has to copy the youtube video URL that they want to download and simply paste that URL in the ‘paste link here’ section and click on the download button, it will start downloading the video. When video downloading finishes, it shows a message ‘downloaded’ popup on the window below the download button.
+To start the bot simply run the program, which will prompt a response from the bot on your selected channel to alert you that it is online. You also have the ability to perform addition, look up formulas of your choice, and start a guided study session that will periodically alert you and time the duration of your session. 
 
-## Credits
 
-* NeuralNine/youtube-downloader-converter
-* [Youtbe Downloader Python](https://www.youtube.com/watch?v=BPhvbIuq7uM)
+## Commands
 
+$hello - Sends a customizable message to you
+
+$start - Starts the study session
+
+$end - Ends the study session
+
+$resources - Sends helpful links to direct you to commonly used resources
+
+$formula - Sends you a picture of your choice with formulas 
+
+$add - Adds numbers seperated by spaces 
 
 ## License
 MIT © [QuincyOlocha]()
