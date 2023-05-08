@@ -1,6 +1,5 @@
 # Discord-Study-Bot
-The YouTube Downloader is a program that allows you to download your favorite YouTube videos. 
-
+The Discord study bot is a helpful tool to assit your studying!
 
 ## Motivation
 I spend way too much time as it is on YouTube, but one challenge I've always faced is when going on a road trip or somewhere with spotty cell service is that I'm unable to watch more than a few seconds of a video if at all. This is where the YouTube Downloader comes in, allowing you to download a video of your choice as an mp4 file to take with you on the go! It should also allow you to download the video in the quality of your choice to help save on space. 
@@ -33,7 +32,9 @@ $end - Ends the study session
 
 $resources - Sends helpful links to direct you to commonly used resources
 
-$formula - Sends you a picture of your choice with formulas 
+$formula(1) - Sends you a picture of your choice with formulas 
+
+$links - Sends you links you may visit frequently 
 
 $add - Adds numbers seperated by spaces 
 
