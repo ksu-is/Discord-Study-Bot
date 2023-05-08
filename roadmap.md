@@ -9,7 +9,7 @@
 - [x] Establish Roadmap
 - [x] Atleast 6 commits to repository -- curently 6
 - [x] Add useful comments to comits.
-- [x] Implement ability to start a study session
+- [x] Implement ability to add, start a study session with reminders, and respond
 
 
 # Sprint 3
